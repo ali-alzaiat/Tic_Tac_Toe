@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(https://static.vecteezy.com/system/resources/previews/001/879/980/non_2x/playful-tic-tac-toe-free-vector.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header h1{
+  font-size: 38px;
+  font-weight: bold;
+  font-family: cursive;
+  color: orange;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.header h1 span {
+  color: red;
+}
+
+.header h2{
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 26px;
+}
+
+.gameWindow {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  width: 50%;
+  height: 80vh;
+  border: 3px solid black;
+  margin: 10px auto;
+  background-color: lightgray;
+}
+
+div.gameWindow div.area {
+  border: 3px solid black;
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.area p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 130px;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 10% 0 0 0;
+}
+
+@media screen and (max-width: 700px){
+  .gameWindow {
+    margin-top: 30%;
+    width: 80%;
+    height: 50vh;
+  }
+  .area p {
+    font-size: 80px;
+  }
+}
